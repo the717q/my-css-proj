@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+:root {
+  --main-color-black: hsl(300, 10%, 4%);
+  --main-color-white: hsl(300, 8%, 88%);
+  --clickable-components: hsl(222, 100%, 61%);
+  --clickable-components-secondary: hsl(44, 99%, 72%);
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--main-color-black);
+}
+
+.navigation-bar {
+  cursor: default;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: var(--main-color-black);
+}
+
+.navigation-bar h1 {
+  font-family: var(--font);
+  font-size: 1rem;
+  color: var(--main-color-white);
+}
+
+.navigation-bar a {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 3px;
+  color: var(--main-color-white);
+  transition: all 1s linear;
+}
+
+.navigation-bar a:hover {
+  background-color: var(--main-color-white);
+  color: var(--main-color-black);
+}
+
+main {
+  cursor: default;
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: var(--main-color-black);
+}
+
+main .presentation {
+  min-height: 250px;
+  padding: 1rem;
+  text-align: left;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--main-color-white);
+  border-bottom: 1px solid var(--main-color-white);
+  color: var(--main-color-white);
+}
+
+main .hobbies {
+  min-height: 150px;
+  padding: 1rem;
+  display: flex;
+  border-bottom: 1px solid var(--main-color-white);
+}
+
+main .hobbies .date-section {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+main .hobbies .date-section .date {
+  font-size: 0.5rem;
+  padding: 10px;
+  color: var(--main-color-white);
+  border-bottom: 1px solid var(--main-color-white);
+}
+
+main .hobbies .hobbies-headers {
+  display: inline-flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+main .hobbies .hobbies-headers .header-hobbies {
+  font-size: 1.2rem;
+  color: var(--main-color-white);
+}
+
+main .hobbies-headers .header-hobbies,
+.paragraph-hobbies {
+  margin: 2px;
+  color: var(--main-color-white);
+}
+
+main .media {
+  min-height: 150px;
+  padding: 1rem;
+  display: flex;
+  border-bottom: 1px solid var(--main-color-white);
+}
+
+main .media .date-section {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+  color: var(--main-color-white);
+}
+
+main .media .date-section .date {
+  font-size: 0.5rem;
+  padding: 10px;
+  border-bottom: 1px solid var(--main-color-white);
+  color: var(--main-color-white);
+}
+
+main .media .social-media-headers {
+  display: inline-flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+main .media .social-media-headers .media-heading {
+  margin: 2px;
+  font-size: 1.2rem;
+  color: var(--main-color-white);
+}
+
+main .media .social-media-headers .media-list {
+  margin: 2px;
+}
+
+main .media .social-media-headers .media-list li {
+  margin: 5px;
+  color: var(--main-color-white);
+}
+
+main .media .social-media-headers .media-list li::marker {
+  content: '✝ ';
+}
+
+main .media .social-media-headers .media-list a {
+  text-decoration: none;
+  color: var(--main-color-white);
+}
+
+main .projects {
+  min-height: 150px;
+  padding: 1rem;
+  display: flex;
+  border-bottom: 1px solid var(--main-color-white);
+}
+
+main .projects .date-section {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+  color: var(--main-color-white);
+}
+
+main .projects .date-section .date {
+  font-size: 0.5rem;
+  padding: 10px;
+  color: var(--main-color-white);
+  border-bottom: 1px solid var(--main-color-white);
+}
+
+main .projects .projects-headers {
+  display: inline-flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  color: var(--main-color-white);
+}
+
+main .projects .projects-headers .projects-heading {
+  margin: 2px;
+  font-size: 1.2rem;
+  color: var(--main-color-white);
+}
+
+main .projects .projects-headers .projects-list {
+  margin: 2px;
+}
+
+main .projects .projects-headers .projects-list li {
+  margin: 2px;
+}
+
+main .projects .projects-headers .projects-list li a {
+  text-decoration: none;
+  color: var(--main-color-white);
+}
+
+footer {
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+footer .form-register {
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-color-white);
+}
+
+footer .form-register label {
+  font-size: 1.5rem;
+}
+
+footer .form-register #blog {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+footer .form-register input[type='text' i] {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+footer .form-register .email-adress {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  color: var(--main-color-black);
+}
+
+footer .form-register input[type='text' i] {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 2px solid var(--main-color-black);
+}
+
+footer .form-register #blog {
+  border: 2px solid var(--main-color-black);
+}
+
+footer .form-register input[type='submit' i] {
+  width: 25%;
+  padding: 0.5rem;
+  margin: 2rem 0.5rem;
+  border: 2px solid var(--main-color-black);
+  color: var(--main-color-white);
+  background-color: var(--main-color-black);
+  transition: all 0.5s linear;
+}
+
+footer .form-register input[type='submit' i]:hover {
+  background-color: var(--main-color-white);
+  color: var(--main-color-black);
+}
+
+footer h5 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--main-color-white);
+}
+
+/* About.html */
+
+main .why-web-developer {
+  min-height: 250px;
+  margin: 1rem;
+  padding: 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--main-color-white);
+}
+
+main .why-web-developer img {
+  width: 50px;
+}
+
+main .why-web-developer h2 {
+  font-size: 2rem;
+  color: var(--main-color-white);
+}
+
+main .why-web-developer p {
+  font-size: 1rem;
+  padding: 0px 100px;
+  line-height: 25px;
+  text-align: left;
+}
+
+main .img {
+  text-align: center;
+}
+
+main .img #my-image {
+  width: 50%;
+  margin: 1rem;
+  height: 400px;
+}
