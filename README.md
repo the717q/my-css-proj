@@ -11,4 +11,4 @@
 
 ## 4. Testing the quality of the code and the relation between HTML/CSS, (26th)
 
-## 5. GitHub Deployment, (26th)
+## 5. GitHub Deployment, (25, 26th)
